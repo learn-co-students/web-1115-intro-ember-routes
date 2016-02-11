@@ -1,0 +1,10 @@
+{{#each model as |artist|}}
+<div class="artist">
+  {{artist.name}}
+</div>
+{{/each}}
+
+{{input value=artistName class="new-artist"}}
+<button class="add-artist" {{action "addArtist" artistName}}>Add Artist</button>
+
+{{outlet}}
